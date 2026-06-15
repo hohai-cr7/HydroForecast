@@ -1,0 +1,142 @@
+{
+  "pcp_intensity": {
+    "mean": 4.521219590727569,
+    "std": 0.3988128053744473,
+    "domain": "log1p"
+  },
+  "SoilGrids1km_SNDPPT_mean_all_layers": {
+    "mean": 46.176334340763134,
+    "std": 8.998788608133495,
+    "domain": "linear"
+  },
+  "slope_1KMmn_GMTEDmd": {
+    "mean": 4.946641858707971,
+    "std": 4.6079167398305,
+    "domain": "linear"
+  },
+  "WorldClim_V2_snowfall_fraction_P": {
+    "mean": 0.13131394030978466,
+    "std": 0.1405994591192004,
+    "domain": "linear"
+  },
+  "GLHYMPS_V2_logK_Ferr_raster_0p025": {
+    "mean": -1293.308593879864,
+    "std": 130.22169463684176,
+    "domain": "linear"
+  },
+  "Lakes_Dams_Wetlands_GLWD_3": {
+    "mean": 1.0716588590857574,
+    "std": 2.7627584971521584,
+    "domain": "linear"
+  },
+  "NDVI_climatology_VGT-PROBAV_V2": {
+    "mean": 0.5101775595013223,
+    "std": 0.15647732629967057,
+    "domain": "linear"
+  },
+  "CGIAR_PET_V2": {
+    "mean": 1168.8075077446167,
+    "std": 473.97942075979944,
+    "domain": "linear"
+  },
+  "WorldClim_V21_Pmean": {
+    "mean": 1052.2794684548546,
+    "std": 692.7390843845777,
+    "domain": "linear"
+  },
+  "WorldClim_V21_Tmean": {
+    "mean": 10.417118247072157,
+    "std": 9.088727697509796,
+    "domain": "linear"
+  },
+  "WorldClim_V21_Wind": {
+    "mean": 3.0382436720816015,
+    "std": 1.1165823476189185,
+    "domain": "linear"
+  },
+  "ISRIC_clay": {
+    "mean": 24.7607801284473,
+    "std": 10.742612066888828,
+    "domain": "linear"
+  },
+  "ISRIC_sand": {
+    "mean": 48.31041896486589,
+    "std": 13.07609446742127,
+    "domain": "linear"
+  },
+  "ISRIC_silt": {
+    "mean": 26.92880015111447,
+    "std": 8.000644976959476,
+    "domain": "linear"
+  },
+  "Lithology_geology_classes_Durr_2005": {
+    "mean": 6.3913282961843585,
+    "std": 3.535787691596005,
+    "domain": "linear"
+  },
+  "MOD44B_percent_tree_cover_smaller": {
+    "mean": 29.68076161692482,
+    "std": 19.62147983142387,
+    "domain": "linear"
+  },
+  "area": {
+    "mean": 7.974942159169086,
+    "std": 2.4705846324545164,
+    "domain": "log1p"
+  },
+  "long": {
+    "mean": -7.123884397431054,
+    "std": 81.94262442796845,
+    "domain": "linear"
+  },
+  "lat": {
+    "mean": 29.242631280695125,
+    "std": 31.798430260760107,
+    "domain": "linear"
+  },
+  "res_area_GeoDAR_v11_reservoirs_km2": {
+    "mean": 366.1700921798262,
+    "std": 2699.878758586426,
+    "domain": "linear"
+  },
+  "reservoir_impact_GRanD_v1_3": {
+    "mean": 0.589377408386853,
+    "std": 4.7258686573879425,
+    "domain": "linear"
+  },
+  "re_q_0.5": {
+    "mean": 0.9784341535768795,
+    "std": 1.4845624285813317,
+    "domain": "linear"
+  },
+  "aridity_index": {
+    "mean": 1.466027200604458,
+    "std": 3.2497159216528875,
+    "domain": "linear"
+  },
+  "UMD_1km_landcover": {
+    "mean": 6.625475255005667,
+    "std": 2.340679325755689,
+    "domain": "linear"
+  },
+  "re_mean_annual_runoff_mm": {
+    "mean": 5.463887435740537,
+    "std": 1.5217212273329024,
+    "domain": "log1p"
+  },
+  "FAO_FRA2000_forest_cover_fraction_smaller": {
+    "mean": 0.45396411031356254,
+    "std": 0.30047245588608124,
+    "domain": "linear"
+  },
+  "gmia_v5_aei_pct": {
+    "mean": 1.6918636191915377,
+    "std": 3.5926290543569266,
+    "domain": "linear"
+  },
+  "GLiM_V01_Export": {
+    "mean": 5.580566301473366,
+    "std": 6.18924952303552,
+    "domain": "linear"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "runoff":{
+  "mean": 0.5908494729536445,
+  "std": 0.6324625357520032,
+  "domain": "log1p",
+  "unit": "mm/day",
+  "source_dir": "/home/huangbh/GRDC_for_train/GRDC_all_stations",
+  "note": "computed from training CSVs only; q_mm >= 0 and finite."
+  }
+}
