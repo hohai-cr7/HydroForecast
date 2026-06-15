@@ -1,0 +1,85 @@
+model:
+  target: ddpm.RunoffDDPM
+  params:
+    geo_key: geo
+    past_fast_key: past_fast
+    past_slow_key: past_slow_vec
+    future_weather_key: future_weather
+    runoff_key: runoff
+    loss_type: l2
+    conditioning_key: again
+    clip_denoised: false
+    timesteps: 1000
+    log_every_t: 200
+    image_size: 3
+    channels: 1
+    use_ema: false
+    unet_config:
+      target: model.CondDiffusion
+      params:
+        input_dim_fast: 6
+        input_dim_future: 2
+        geo_dim: 21
+        hidden_dim: 256
+        num_layers: 1
+        dropout: 0.3
+        pro: 0.2
+        use_layernorm_in: false
+data:
+  target: train.DataModuleFromConfig
+  params:
+    batch_size: 512
+    num_workers: 16
+    data:
+      target: dataset.FloodWindowDataset
+      params:
+        root_dir: HydroForecast/train_data/
+        static_csv: HydroForecast/geo_statics.csv
+        scaler_weather_json: HydroForecast/configs/scaler_weather.json
+        scaler_static_json: HydroForecast/configs/scaler_static.json
+        scaler_q_json: HydroForecast/configs/scaler_q.json
+        fast_cols:
+        - P
+        - Tmean
+        - SWd
+        - LWd
+        - RH
+        - PET
+        future_cols:
+        - P
+        - Tmean
+        slow_cols: # not use slow_cols
+        - API14
+        - API30
+        - Tmean30
+        - PET30
+        geo_cols:
+        - pcp_intensity
+        - slope_1KMmn_GMTEDmd
+        - WorldClim_V2_snowfall_fraction_P
+        - GLHYMPS_V2_logK_Ferr_raster_0p025
+        - SoilGrids1km_SNDPPT_mean_all_layers
+        - Lakes_Dams_Wetlands_GLWD_3
+        - NDVI_climatology_VGT-PROBAV_V2
+        - WorldClim_V21_Pmean
+        - MOD44B_percent_tree_cover_smaller
+        - area
+        - long
+        - lat
+        - res_area_GeoDAR_v11_reservoirs_km2
+        - q_0.99
+        - aridity_index
+        - FAO_FRA2000_forest_cover_fraction_smaller
+        - UMD_1km_landcover
+        - q_0.05  # we also trian a 18 statics version for no hydrological signature
+        - q_0.01
+        - gmia_v5_aei_pct
+        - GLiM_V01_Export
+        runoff_col: runoff
+        past_len: 365
+        future_len: 7
+        stride: 1
+        start_date: '1979-01-01'
+        end_date: '2006-12-31'
+        stats_csv_path: ''
+        verbose: false
